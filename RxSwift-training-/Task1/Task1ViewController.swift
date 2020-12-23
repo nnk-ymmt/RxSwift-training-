@@ -63,7 +63,7 @@ final class Task1ViewController: UIViewController {
     private func example2() {
         do {
             // (例1) 完了イベントをストリームに流し、全てのストリームが流れ終わるとcompletion
-            debugPrint("--- \(#function) 例1 ----")
+            debugPrint("--- \(#function) 例1 ---")
             let observable = Observable.from([0,1,2,3,4])
             observable.subscribe(onNext: { value in
                 debugPrint("success: \(value)")
@@ -74,7 +74,7 @@ final class Task1ViewController: UIViewController {
 
         do {
             // (例2) 例外イベントをストリームに流す
-            debugPrint("--- \(#function) 例2 ----")
+            debugPrint("--- \(#function) 例2 ---")
             let observable = Observable.from([0,1,2,3,4,5,6])
             observable.do(onNext: { value in // doメソッドはストリームが流れたら処理を挟む
                 if value == 4 { throw NSError.init(domain: "error", code: 0, userInfo: nil) }
@@ -90,7 +90,7 @@ final class Task1ViewController: UIViewController {
 
     private func test2() {
         // (問2) ランダムな数値をストリームに流して、表示してcompletionかerrorにする
-        debugPrint("--- \(#function) 問2 ----")
+        debugPrint("--- \(#function) 問2 ---")
         // 1度だけストリームを流して終了させる処理を10回テスト
         for _ in 0...10 {
             let observable = Observable.of(Int.random(in: 0...10))
