@@ -16,25 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-De-RP3">
-                                <rect key="frame" x="186" y="408" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-ZZ-Hu1">
-                                <rect key="frame" x="159" y="336" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="hKd-PZ-0aq" id="CgE-Kh-g7z"/>
-                                </connections>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UyZ-qr-53o">
+                                <rect key="frame" x="103.5" y="407" width="207" height="82"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-ZZ-Hu1">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="hKd-PZ-0aq" id="CgE-Kh-g7z"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-De-RP3">
+                                        <rect key="frame" x="0.0" y="51" width="207" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2zR-3F-HHg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UyZ-qr-53o" firstAttribute="height" secondItem="2zR-3F-HHg" secondAttribute="height" multiplier="0.1" id="Ut3-Ju-mbR"/>
+                            <constraint firstItem="UyZ-qr-53o" firstAttribute="width" secondItem="2zR-3F-HHg" secondAttribute="width" multiplier="0.5" id="nuo-5N-ypV"/>
+                            <constraint firstItem="UyZ-qr-53o" firstAttribute="centerX" secondItem="HSL-6l-LnA" secondAttribute="centerX" id="rwf-ja-W2z"/>
+                            <constraint firstItem="UyZ-qr-53o" firstAttribute="centerY" secondItem="HSL-6l-LnA" secondAttribute="centerY" id="xff-og-ozp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="KuK-De-RP3" id="Ats-R9-Cml"/>
