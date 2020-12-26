@@ -113,8 +113,8 @@ final class Task2ViewController: UIViewController, UITextFieldDelegate {
     }
 
     private func example5() {
-        debugPrint("--- \(#function) 例5 ---")
         // textFieldのストリームから値を受け取りストリームに流す
+        debugPrint("--- \(#function) 例5 ---")
         textFieldRelay.asObservable() // relayをobservableに変換する(無くても動くが明示しておいた方が安全)
             .subscribeOn(MainScheduler.instance) // 問1で使うから書くがsubscribeをメインスレッドで処理する
             .subscribe(onNext: { str in
