@@ -43,6 +43,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-Op-gS6">
                                         <rect key="frame" x="0.0" y="228" width="41" height="30"/>
                                         <state key="normal" title="Task4"/>
+                                        <connections>
+                                            <segue destination="0yh-T4-UCg" kind="show" id="edK-ro-j5r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -68,7 +71,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj8-P6-jit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328.2608695652175" y="-114.50892857142857"/>
+            <point key="canvasLocation" x="1283" y="-75"/>
         </scene>
         <!--Task2-->
         <scene sceneID="Cz8-QR-dYj">
@@ -89,6 +92,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqy-ob-QKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276" y="166"/>
+        </scene>
+        <!--Task4-->
+        <scene sceneID="kv0-mi-Fbe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Task4" id="0yh-T4-UCg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="05X-TC-LCS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhe-iL-af0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rvr-he-Ymz">
