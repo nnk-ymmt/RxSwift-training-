@@ -6,7 +6,9 @@ target 'RxSwift-training-' do
   use_frameworks!
 
   # Pods for RxSwift-training-
+    pod 'NSObject+Rx'
     pod 'RxCocoa'
+    pod 'RxGesture'
     pod 'RxSwift'
  
   target 'RxSwift-training-Tests' do

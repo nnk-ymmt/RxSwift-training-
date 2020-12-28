@@ -1,26 +1,37 @@
 PODS:
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
 
 DEPENDENCIES:
+  - "NSObject+Rx"
   - RxCocoa
+  - RxGesture
   - RxSwift
 
 SPEC REPOS:
   trunk:
+    - "NSObject+Rx"
     - RxCocoa
+    - RxGesture
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: d987cb9fe5bcb77484d65b3c6906baaf362fcf0b
+PODFILE CHECKSUM: 5926334bdeec17d1d7c7d58ec6b3fcb1f9923fc7
 
 COCOAPODS: 1.10.0
