@@ -139,9 +139,5 @@ final class Task4ViewController: UIViewController, HasDisposeBag {
         changeColorObservable.subscribeOn(MainScheduler.instance).subscribe(onNext: { [weak self] color in
             self?.view3.backgroundColor = color
         }).disposed(by: disposeBag)
-//        let changeColorObservable = Observable.merge(redTextFieldRelay, greenTextFieldRelay, blueTextFieldRelay)
-//        changeColorObservable.subscribe(onNext: { color in
-//            self.view3.backgroundColor = color
-//        }).disposed(by: disposeBag)
     }
 }
