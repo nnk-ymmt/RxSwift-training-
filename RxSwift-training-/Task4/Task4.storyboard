@@ -74,20 +74,20 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="la2-UK-KYf">
-                                <rect key="frame" x="151" y="397" width="112" height="34"/>
+                                <rect key="frame" x="41.5" y="397" width="331" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-n1-2Px">
-                                        <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIs-Jx-ge9">
-                                        <rect key="frame" x="40" y="0.0" width="32" height="34"/>
+                                        <rect key="frame" x="113" y="0.0" width="105" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usW-NN-h9k">
-                                        <rect key="frame" x="80" y="0.0" width="32" height="34"/>
+                                        <rect key="frame" x="226" y="0.0" width="105" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
@@ -107,6 +107,7 @@
                             <constraint firstItem="GcQ-gL-Qdk" firstAttribute="top" secondItem="cAF-Wc-FQm" secondAttribute="top" constant="15" id="kqa-si-qDt"/>
                             <constraint firstItem="la2-UK-KYf" firstAttribute="top" secondItem="GcQ-gL-Qdk" secondAttribute="bottom" constant="100" id="qVb-D7-GmF"/>
                             <constraint firstItem="la2-UK-KYf" firstAttribute="centerX" secondItem="2sc-Fb-KSx" secondAttribute="centerX" id="rq0-Lv-enO"/>
+                            <constraint firstItem="la2-UK-KYf" firstAttribute="width" secondItem="2sc-Fb-KSx" secondAttribute="width" multiplier="0.8" id="yr0-5j-UAw"/>
                         </constraints>
                     </view>
                     <connections>
