@@ -130,5 +130,12 @@ final class Task2ViewController: UIViewController, UITextFieldDelegate {
             .subscribe(onNext: { str in
                 self.label.text = str
             }).disposed(by: disposeBag)
+
+        // 解答
+        textFieldRelay
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] str in
+                self?.label.text = str
+            }).disposed(by: disposeBag)
     }
 }
