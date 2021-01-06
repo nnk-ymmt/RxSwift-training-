@@ -131,7 +131,7 @@ final class Task2ViewController: UIViewController, UITextFieldDelegate {
                 self.label.text = str
             }).disposed(by: disposeBag)
 
-        // 解答
+        // 解答 [weak self]を付ける
         textFieldRelay
             .subscribeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] str in
